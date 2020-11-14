@@ -17,3 +17,13 @@ relational data kept in separate tables, relation create by shared id between re
 
 **DB Management = 1 + 2 + 3**  
 **DB Administration = maintenance**
+
+# Relational Schema
+
+## Primary Key
+
+a column (or a set of columns), whose value exist & unique for every record in the table.
+
+-  each table has 1 primary key
+-  can't contain null
+-  not all tables have a primary key
