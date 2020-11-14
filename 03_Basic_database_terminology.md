@@ -22,8 +22,18 @@ relational data kept in separate tables, relation create by shared id between re
 
 ## Primary Key
 
-a column (or a set of columns), whose value exist & unique for every record in the table.
+a column (or a set of columns), whose value exist & unique for every record in the table (bold, underline - in RS)
 
 -  each table has 1 primary key
 -  can't contain null
 -  not all tables have a primary key
+
+## Foreign Key
+
+show us where the relations are (FK - in RS)  
+identifies the relationships between tables
+
+-  customers_id, primary key in customers table
+-  customers_id, foreign key in sale table
+-  foreign key **can** be null
+-  MySql throw error when f.key contain value not exist as p.key in other table.
