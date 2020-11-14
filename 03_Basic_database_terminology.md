@@ -41,3 +41,12 @@ identifies the relationships between tables
 ## Unique key & Null values
 
 **Unique key** used to specify to not allow duplicate data in specific column, can contain null value.
+
+# Relationships
+
+tell how much data from foreign key field can be seen in the primary key column of the table the data is related to in vice versa.
+
+-  one-to-many :  
+   one value "customer_id" (customers table), can by found many times in customer_id column in sales table
+-  many-to-one :  
+   each sale record associated with on customer_id
