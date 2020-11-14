@@ -1,20 +1,42 @@
-# Data Definition Language
+# Data Definition Language (DDL)
 
-set of statements allow the user to define / modify data structures & objects
+set of statements allow data structures definition / modification
 
 -  **CREATE**
    -  creating entire databases, tables
-   -  CREATE TABLE sales purchase_number INT ;
+   -  CREATE TABLE sales purchase_number INT;
 -  **ALTER**
    -  altering existing objects **ADD**, **REMOVE**, **RENAME**
    -  ALTER TABLE sales  
-      ADD COLUMN date_of_purchase DATE ;
+      ADD COLUMN date_of_purchase DATE;
 -  **DROP**
    -  deleting DB object
-   -  DROP TABLE customers
+   -  DROP TABLE customers;
 -  **RENAME**
    -  allows you to rename object
-   -  RENAME TABLE customers TO customers_data
+   -  RENAME TABLE customers TO customers_data;
 -  **TRUNCATE**
-   -  remove data
-   -  TRUNCATE TABLE customers_data
+   -  remove data from table
+   -  TRUNCATE TABLE customers_data;
+
+# Data Manipulation Language (DML)
+
+set of statements allow data manipulation
+
+-  **SELECT ... FROM ...**
+   -  retrieve specific data
+   -  SELECT \* FROM sales;
+-  **INSERT INTO... VALUES...**
+   -  insert data into tables
+   -  INSERT INTO sales VALUES (1, "2017-10-11");
+   -  INSERT INTO sales (INSERT INTO sales (purchase_number, date_of_purchase)  
+      VALUES (1, "2017-10-11");
+-  **UPDATE ... SET ... WHERE...**
+   -  update existing data
+   -  UPDATE sales  
+      SET date_of_purchase_number = "2017-12-12"  
+      WHERE purchase_number = 1;
+-  **DELETE ... FROM ...**
+   -  specify precisely what data potion should be removed
+   -  DELETE FROM sales  
+      WHERE purchase_number = 1;
