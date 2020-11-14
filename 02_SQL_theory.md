@@ -59,3 +59,18 @@ allow us to manage the rights users have in a database
    -  revoke permissions from user
    -  REVOKE type_of_permission ON database_name.table_name  
       FROM "username’@’localhost"
+
+# Transaction Control Language (TCL)
+
+not every change you make to a database is saved automatically
+
+-  **COMMIT**
+   -  related to INSERT, UPDATE, DELETE
+   -  will save the changes you’ve made and let other users have access to the modified version of the
+      database
+   -  add COMMIT to the end of the command
+-  **ROLLBACK**
+   -  allows you to undo any changes you have made but don’t want to be
+      saved permanently (not committed)  
+      reverts to the last non committed state.
+-  use command separately
