@@ -40,3 +40,22 @@ set of statements allow data manipulation
    -  specify precisely what data potion should be removed
    -  DELETE FROM sales  
       WHERE purchase_number = 1;
+
+# Data Control Language (DCL)
+
+allow us to manage the rights users have in a database
+
+-  CREATE USER "username’@’localhost" IDENTIFIED BY "pass";
+
+-  **GRANT...TO...**
+   -  give permissions to a user
+   -  GRANT type_of_permission ON database_name.table_name  
+      TO "username’@’localhost"
+   -  GRANT SELECT ON sales.customers  
+      TO "username’@’localhost"
+   -  GRANT ALL ON sales.\*  
+      TO "username’@’localhost"
+-  **REVOKE**
+   -  revoke permissions from user
+   -  REVOKE type_of_permission ON database_name.table_name  
+      FROM "username’@’localhost"
