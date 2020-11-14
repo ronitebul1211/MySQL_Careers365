@@ -37,3 +37,7 @@ identifies the relationships between tables
 -  customers_id, foreign key in sale table
 -  foreign key **can** be null
 -  MySql throw error when f.key contain value not exist as p.key in other table.
+
+## Unique key & Null values
+
+**Unique key** used to specify to not allow duplicate data in specific column, can contain null value.
