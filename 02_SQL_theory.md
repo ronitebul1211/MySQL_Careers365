@@ -73,4 +73,4 @@ not every change you make to a database is saved automatically
    -  allows you to undo any changes you have made but don’t want to be
       saved permanently (not committed)  
       reverts to the last non committed state.
--  use command separately
+   -  use command separately
